@@ -12,11 +12,7 @@
                   <i class="fa fa-heart"></i>
                 </span>
               </button>
-              <button class="button is-small" :title="addToFavouriteLabel" v-show="!product.isFavourite" @click="saveToFavorite(product.id)">
-                <span class="icon is-small">
-                  <i class="fa fa-heart-o"></i>
-                </span>
-              </button>
+              
             </h2>
           </div>
           <div class="card-content__text">
@@ -78,8 +74,8 @@ export default {
   
   data () {
     return {
-      addToCartLabel: 'Add to cart',
-      removeFromCartLabel: 'Remove from cart',
+      addToCartLabel: 'Agregar al carrito',
+      removeFromCartLabel: 'Eliminar del carrito',
       addToFavouriteLabel: 'Add to favourite',
       removeFromFavouriteLabel: 'Remove from favourite',
       product: {},

@@ -10,18 +10,7 @@
         <div class="media-content">
           <p class="title is-4">{{ product.title }}</p>
         </div>
-        <div>
-          <button class="button is-small" :title="removeFromFavouriteLabel" v-show="product.isFavourite" @click="removeFromFavourite(product.id)">
-            <span class="icon is-small">
-              <i class="fa fa-heart"></i>
-            </span>
-          </button>
-          <button class="button is-small" :title="addToFavouriteLabel" v-show="!product.isFavourite" @click="saveToFavorite(product.id)">
-            <span class="icon is-small">
-              <i class="fa fa-heart-o"></i>
-            </span>
-          </button>
-        </div>
+        
       </div>
       <div class="content is-clearfix">
         <p>{{ product.description }}</p>
